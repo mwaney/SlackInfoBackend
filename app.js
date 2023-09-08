@@ -15,7 +15,7 @@ app.get("/api", (req, res) => {
   ];
   const date = new Date();
   const today = weekDays[date.getDay()];
-  const utcTime = date.toISOString();
+  const utcTime = date.toISOString().replace(/(\.\d{3})?Z$/, "Z");
 
   const response = {
     slack_name: userName,
