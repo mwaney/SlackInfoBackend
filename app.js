@@ -18,14 +18,16 @@ app.get("/api", (req, res) => {
   const utcTime = date.toISOString();
 
   const response = {
-    slack_name: "Edu",
+    slack_name: userName,
     current_day: today,
     utc_time: utcTime,
-    track: "backend",
-    github_file_url: "",
-    github_repo_url: "",
+    track: track,
+    github_file_url:
+      "https://github.com/mwaney/SlackInfoBackend/blob/main/app.js",
+    github_repo_url: "https://github.com/mwaney/SlackInfoBackend",
     status_code: 200,
   };
+  res.send(response);
 });
 
 const port = process.env.PORT || 4040;
