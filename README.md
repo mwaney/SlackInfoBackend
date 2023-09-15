@@ -92,11 +92,12 @@ Your API will be available at **http://localhost:3000** by default (adjust the p
 
 ```bash
   {
-    "_id": "1234567876",
-    "name": [
-      "John Doe"
-    ],
-  }
+"_id": "6503eece19b912641cfa961b",
+"name": [
+"Zoe Pendo Mwaniki"
+],
+"__v": 0
+}
 ```
 
 ### Update a Person
@@ -107,7 +108,7 @@ Your API will be available at **http://localhost:3000** by default (adjust the p
 
   ```bash
   {
-    "name": "Jane Doe"
+    "name": "Zoe Pendo"
   }
   ```
 
@@ -115,14 +116,17 @@ Your API will be available at **http://localhost:3000** by default (adjust the p
 
   ```bash
   {
-    "_id": "1234567876",
-    "name": [
-      "Jane Doe"
-    ]
+  "_id": "6503eece19b912641cfa961b",
+  "name": [
+  "Zoe Pendo"
+  ],
+  "__v": 0
   }
   ```
 
   ### Delete a Person
+
+  - Displays the deleted persons info
 
 - **EndPoint: /api/:user_id**
 - **Method**: DELETE
@@ -130,9 +134,10 @@ Your API will be available at **http://localhost:3000** by default (adjust the p
 
   ```bash
   {
-    "_id": "1234567876",
-    "name": [
-      "Jane Doe"
-    ]"
+  "_id": "6503eece19b912641cfa961b",
+  "name": [
+  "Zoe Pendo"
+  ],
+  "__v": 0
   }
   ```
